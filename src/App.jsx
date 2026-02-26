@@ -1,4 +1,4 @@
-import Admin from "./Admin"
+import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { portfolioData } from "./data"
 import {
@@ -16,7 +16,6 @@ const navIcons = {
 }
 
 export default function App() {
-  if (window.location.pathname === "/admin") return <Admin />
   const [active, setActive] = useState("home")
   const d = portfolioData
 
