@@ -89,7 +89,7 @@ function HomeSection({ d, navigate }) {
           transition={{ delay: 0.1, type: "spring", stiffness: 200 }}
           className="w-28 h-28 mx-auto mb-6 rounded-full overflow-hidden border-2 border-[#c9a84c]/60 shadow-2xl shadow-[#8b0000]/30"
         >
-          <img src="/src/profile.jpg.jpg" alt="Ayush Gupta" className="w-full h-full object-cover object-top" />
+          <img src="/profile.jpg.jpg" alt="Ayush Gupta" className="w-full h-full object-cover object-top" />
         </motion.div>
 
         <motion.div
