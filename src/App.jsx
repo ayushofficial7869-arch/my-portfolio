@@ -75,7 +75,7 @@ export default function App() {
 /* ─── HOME ─── */
 function HomeSection({ d, navigate }) {
   return (
-    <section className="min-h-[calc(100vh-64px)] flex flex-col items-center justify-center px-4 relative overflow-hidden">
+    <section className="flex flex-col items-center justify-center px-4 py-16 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#8b0000]/12 rounded-full blur-[140px]" />
         <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-[#c9a84c]/8 rounded-full blur-[100px]" />
