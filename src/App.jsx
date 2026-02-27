@@ -6,18 +6,21 @@ import {
   Phone, Linkedin, MapPin, ChevronRight,
   GraduationCap, Wrench, Star, Newspaper
 } from "lucide-react"
+import Certificates from "./certificates"
+import CertAdmin from "./CertAdmin"
 
-const sections = ["home", "about", "skills", "experience", "projects", "achievements", "contact"]
+const sections = ["home", "about", "skills", "experience", "projects", "achievements", "certificates", "contact"]
 
 const navIcons = {
   home: Home, about: User, skills: Wrench,
   experience: Briefcase, projects: Code,
-  achievements: Award, contact: Mail
+  achievements: Award, certificates: Award, contact: Mail
 }
 
 export default function App() {
   const [active, setActive] = useState("home")
-  const d = portfolioData
+const d = portfolioData
+if (window.location.pathname === "/certadmin") return <CertAdmin />
 
   return (
     <div className="min-h-screen bg-[#080608] text-white font-sans overflow-x-hidden">
@@ -64,6 +67,7 @@ export default function App() {
             {active === "experience" && <ExperienceSection d={d} />}
             {active === "projects" && <ProjectsSection d={d} />}
             {active === "achievements" && <AchievementsSection d={d} />}
+            {active === "certificates" && <Certificates />}
             {active === "contact" && <ContactSection d={d} />}
           </motion.div>
         </AnimatePresence>
